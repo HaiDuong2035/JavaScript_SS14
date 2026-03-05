@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Danh Sách Sản Phẩm Chợ Tết</h1>
+    <div>
+        <input type="text" id="search-input" placeholder="Tìm sản phẩm...">
+        <button type="submit" id="search-buton" onclick="searchProduct()">Tìm kiếm</button>
+    </div>
+    <div class="sort-controls">
+        <button id="sort-asc" onclick="sortDown()">Sắp xếp giá: Thấp > Cao</button>
+        <button id="sort-desc" onclick="sortUp()">Sắp xếp giá: Cao > Thấp</button>
+    </div>
+    <ul id="product-list"></ul>
+    <form id="product-form">
+        <input type="text" id="product-name" placeholder="Tên san phẩm">
+        <input type="number" id="product-price" placeholder="Giá (VND)">
+        <button type="submit" id="add-button">Thêm Sản Phẩm</button>
+    </form>
+    <script src="./BTVN.js"></script>
+</body>
+</html>
